@@ -87,6 +87,8 @@ nav a {
 }
 #table_of_contents h2 {
 	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
 }
 .chapter {
 	margin: 20px;

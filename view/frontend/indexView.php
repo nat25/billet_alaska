@@ -21,7 +21,7 @@
 <section id="table_of_contents">
 	<h2>Table des matières</h2>
 	<?php
-	while ($data = $req->fetch())
+	while ($data = $posts->fetch())
 	{
 	?>
 	<div class="chapter">
@@ -31,11 +31,11 @@
 		<p>
 			<?php echo htmlspecialchars($data['excerpt']); ?>
 		</p>
-		<p>Continuer la lecture</p>
+		<p><a href="index.php?action=post&amp;id=<?= $data['id'] ?>">Continuer la lecture</a></p>
 	</div>	
 	<?php
 	}
-	$req -> closeCursor();
+	$posts -> closeCursor();
 	?>
 </section>
 
